@@ -16,7 +16,7 @@ const DataTable = () => {
   const [deletedRows, setDeletedRows] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/warehouse")
+    fetch("https://warehouseback-bp8u.onrender.com/warehouse")
       .then((data) => data.json())
       .then((data) => setTableData(data.Warehouse))
 .catch((err)=>console.log(err))
